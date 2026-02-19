@@ -1,32 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Homepage - xbox orignal api </title>
-    <style type="text/tailwindcss">
-        @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xbox Original API</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-    <div role=tab class="flex flex-col h-40 items-center justify-center my-10">
-        <div class="border-2 border-soild  shadow-lg">
-            <div class="mx-8 p-8 ">
-                <h1 class="align-middle"> Welcome, to the Xbox orignal Api </h1>
-                <h2 class="align-middle"> How does this work, you may ask </h2>
-                <p class="align-middle " > To use the Api you need to go to <a  class='underline underline-offset-1' href='/games'>/games</a></p>
-                <p> If you use <a  class='underline underline-offset-1' href='/games/4'>/games/4 it will get the 4th game on the list.</a></p>
-                <p> You can find the game just by ID, to do this <a  class='underline underline-offset-1' href='/games/4'>/games/4 </a> it will get the 4th game on the list.</p>
-                <p> You can do the same for games genres, <a  class='underline underline-offset-1' href='/games/genre/sports'>/games/genre/sports </a>  it will show all the sports games</p>
-
-             
-            </div>
-        </div>
+<body class="bg-slate-950 text-slate-200 font-sans">
+ 
+  <header class="bg-slate-900 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-green-500">
+        Xbox Original API
+      </h1>
+      <p class="mt-4 text-slate-400 text-lg">
+        Simple REST API for Xbox game and genre data
+      </p>
     </div>
-</body>
+  </header>
 
+ 
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        Overview
+      </h2>
+      <p class="mt-4 text-slate-400">
+        The Xbox Original API provides programmatic access to Xbox game data,
+        including titles and genres. Perfect for dashboards, hobby projects,
+        and integrations.
+      </p>
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        Base URL
+      </h2>
+      <div class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800">
+        <code class="text-green-400">
+          https://xboxoriginalapi-production.up.railway.app
+        </code>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        Endpoints
+      </h2>
+      <div class="mt-6 space-y-4">
+        <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+          <span class="text-green-500 font-bold">GET</span>
+          <code class="ml-2 text-slate-300">/games</code>
+          <p class="text-slate-400 mt-2">List all games</p>
+        </div>
+        <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+          <span class="text-green-500 font-bold">GET</span>
+          <code class="ml-2 text-slate-300">/games/{id}</code>
+          <p class="text-slate-400 mt-2">Get a specific game by ID</p>
+        </div>
+        <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
+          <span class="text-green-500 font-bold">GET</span>
+          <code class="ml-2 text-slate-300">/games/genre/{genre}</code>
+          <p class="text-slate-400 mt-2">Get games by genre</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        Example Request
+      </h2>
+      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+<code class="text-green-400">curl https://xboxoriginalapi-production.up.railway.app/games/1</code>
+      </pre>
+    </section>
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        Example Response
+      </h2>
+      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+<code class="text-slate-300">{
+"id":1,
+"title":"187 Ride of Die",
+"Developers":"Ubisoft Paris",
+"Publishers":"Ubisoft",
+"Pal":"Aug 25 2025",
+"JP":"Unrelased",
+"NA":"Aug 23 2005",
+"genres":["arcade racing"]
+}</code>
+      </pre>
+    </section>
+
+    <!-- JavaScript Example -->
+    <section>
+      <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
+        JavaScript Example
+      </h2>
+      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+<code class="text-slate-300">fetch('https://xboxoriginalapi-production.up.railway.app/games/1')
+  .then(res => res.json())
+  .then(data => console.log(data));</code>
+      </pre>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
+    © 2026 Xbox Original API | Built for Developers
+  </footer>
+
+</body>
 </html>

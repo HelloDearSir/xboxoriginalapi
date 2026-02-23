@@ -13,7 +13,7 @@
       <h1 class="text-4xl md:text-5xl font-bold text-green-500">
         Xbox Original API
       </h1>
-      <p class="mt-4 text-slate-400 text-lg">
+      <p class="mt-4  text-slate-300 text-lg">
         Simple REST API for Xbox game and genre data
       </p>
     </div>
@@ -25,7 +25,7 @@
       <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
         Overview
       </h2>
-      <p class="mt-4 text-slate-400">
+      <p class="mt-4  text-slate-300">
         The Xbox Original API provides programmatic access to Xbox game data,
         including titles and genres. Perfect for dashboards, hobby projects,
         and integrations.
@@ -49,17 +49,17 @@
         <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
           <span class="text-green-500 font-bold">GET</span>
           <code class="ml-2 text-slate-300">/games</code>
-          <p class="text-slate-400 mt-2">List all games</p>
+          <p class=" text-slate-300 mt-2">List all games</p>
         </div>
         <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
           <span class="text-green-500 font-bold">GET</span>
           <code class="ml-2 text-slate-300">/games/{id}</code>
-          <p class="text-slate-400 mt-2">Get a specific game by ID</p>
+          <p class=" text-slate-300 mt-2">Get a specific game by ID</p>
         </div>
         <div class="bg-slate-900 p-4 rounded-lg border border-slate-800">
           <span class="text-green-500 font-bold">GET</span>
           <code class="ml-2 text-slate-300">/games/genre/{genre}</code>
-          <p class="text-slate-400 mt-2">Get games by genre</p>
+          <p class=" text-slate-300 mt-2">Get games by genre</p>
         </div>
       </div>
     </section>
@@ -67,7 +67,7 @@
       <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
         Example Request
       </h2>
-      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+      <pre  aria-label='curl https://xboxoriginalapi-production.up.railway.app/games/1'class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
 <code class="text-green-400">curl https://xboxoriginalapi-production.up.railway.app/games/1</code>
       </pre>
     </section>
@@ -75,7 +75,7 @@
       <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
         Example Response
       </h2>
-      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+      <pre  aria-label='JSON example'class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
 <code class="text-slate-300">{
 "id":1,
 "title":"187 Ride of Die",
@@ -89,12 +89,12 @@
       </pre>
     </section>
 
-    <!-- JavaScript Example -->
+ 
     <section>
       <h2 class="text-2xl font-semibold border-b border-green-500 pb-2">
         JavaScript Example
       </h2>
-      <pre class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
+      <pre aria-lable='JavaScipt code'class="mt-4 bg-slate-900 p-4 rounded-lg border border-slate-800 overflow-x-auto">
 <code class="text-slate-300">fetch('https://xboxoriginalapi-production.up.railway.app/games/1')
   .then(res => res.json())
   .then(data => console.log(data));</code>

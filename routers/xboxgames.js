@@ -314,8 +314,12 @@ let games = [
     { id: 311, title: "Gauntlet Dark Legacy", Developers: "Midway Games West", Publishers: "Midway", Pal: "Jun 28, 2002", JP: "Unreleased", NA: "Apr 23, 2002", genre: ['Hack and slash', 'dungeon crawl'] },
     { id: 312, title: "Gauntlet: Seven Sorrows", Developers: "Midway Studios San Diego", Publishers: "Midway", Pal: "Feb 28, 2006AUS Mar 24, 2006EU", JP: "Unreleased", NA: "Dec 12, 2005", genre: ['Hack and slash', 'dungeon crawl'] },
     { id: 313, title: "Gene Troopers", Developers: "Cauldron", Publishers: "Playlogic Entertainment", Pal: "Nov 9, 2005", JP: "Unreleased", NA: "Unreleased", genre: ['Action', 'FPS'] },
-    { id: 314, title: "Genma Onimusha", Developers: "Capcom", Publishers: "Capcom", Pal: "Mar 22, 2002", JP: "Feb 22, 2002", NA: "Jan 29, 2002" },
-
+    { id: 314, title: "Genma Onimusha", Developers: "Capcom", Publishers: "Capcom", Pal: "Mar 22, 2002", JP: "Feb 22, 2002", NA: "Jan 29, 2002", genre:['Action-adventure', 'hack and slash'] },
+{ id: 315, title: "Ghost Master: The Gravenville Chronicles", Developers: "Spiral House", Publishers: "Empire Interactive", Pal: "Aug 27, 2004", JP: "Unreleased", NA: "Unreleased", genre:['Puzzle', 'strategy'] },
+{ id: 316, title: "Gladiator: Sword of Vengeance", Developers: "Acclaim Studios Manchester", Publishers: "Acclaim Entertainment", Pal: "Dec 5, 2003", JP: "Unreleased", NA: "Nov 4, 2003", genre:['	Hack and slash'] },
+{ id: 317, title: "Gladius", Developers: "LucasArts", Publishers: "LucasArts", Pal: "Nov 28, 2003", JP: "Unreleased", NA: "Oct 28, 2003", genre:['Tactical role-playing'] },
+{ id: 318, title: "Goblin Commander: Unleash the Horde", Developers: "Jaleco Entertainment", Publishers: "Jaleco Entertainment", Pal: "Mar 19, 2004", JP: "Unreleased", NA: "Nov 11, 2003", genre:['Action', 'real-time strategy'] },
+{ id: 319, title: "The Godfather", Developers: "Page 44 Studios", Publishers: "Electronic Arts", Pal: "Mar 23, 2006AUS Mar 24, 2006EU", JP: "Unreleased", NA: "Mar 21, 2006", genre:['Action-adventure'] },
 ];
 
 app.get('/games', (req, res) => {

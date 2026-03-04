@@ -1,1 +1,3 @@
-The xbox APi uses NodeJS as the backend with JSON,current URL is  https://xboxoriginalapi-production.up.railway.app/
+The xbox APi uses NodeJS as the backend with JSON
+
+To find out more go to https://xboxoriginalapi-production.up.railway.app/

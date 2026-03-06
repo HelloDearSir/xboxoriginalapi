@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 app.use(express.json());
 const xboxgames = require('./routers/xboxgames.js')
+
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/html/index.html'))
 })

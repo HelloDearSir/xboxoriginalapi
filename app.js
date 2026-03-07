@@ -16,9 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 const port = 5000;
-app.get("/posts", (req,res) => {
-    res.json(posts);
-})
+
 app.use(xboxgames);
 app.listen(port,() => {
     console.log(`Server is running on port ${port}`);

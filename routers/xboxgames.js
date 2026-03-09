@@ -339,6 +339,7 @@ app.get('/games/:id', (req, res) => {
     res.send(findGamesID);
 })
 
+// app.get the url / games/genre/:genreName to using the genre for the game using arrays 
 app.get('/games/genre/:genreName', (req, res) => {
     const genreName = req.params.genreName.toLowerCase();
 

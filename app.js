@@ -9,7 +9,7 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/html/index.html'))
 })
 
-
+// content Security policy
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",

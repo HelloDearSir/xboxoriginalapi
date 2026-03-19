@@ -20,6 +20,7 @@ app.use((req, res, next) => {
 const port = 5000;
 
 app.use(xboxgames);
+// for local use 
 app.listen(port,() => {
     console.log(`Server is running on port ${port}`);
 })

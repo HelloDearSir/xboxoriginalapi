@@ -15,8 +15,9 @@ app.use((req, res, next) => {
     "Content-Security-Policy",
     "default-src 'self'; connect-src 'self'  https://xboxoriginalapi-production.up.railway.app"
   );
-  next();
+  next()
 });
+
 const port = 5000;
 
 app.use(xboxgames);

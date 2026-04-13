@@ -87,7 +87,7 @@ let games = [
     { id: 84, title: "BloodRayne", Developers: "Terminal Reality", Publishers: "Majesco Sales NA Vivendi Universal Games PAL", Pal: "May 2, 2003", JP: "Unreleased", NA: "Oct 31, 2002", genres: ['action', 'hack and slash'] },
     { id: 85, title: "BloodRayne 2", Developers: "Terminal Reality", Publishers: "Majesco Sales", Pal: "Feb 17, 2006", JP: "Unreleased", NA: "Oct 12, 2004", genres: ['action', 'hack and slash'] },
     { id: 86, title: "Blood Wake", Developers: "Stormfront Studios", Publishers: "Microsoft Game Studios", Pal: "Mar 14, 2002", JP: "Unreleased", NA: "Dec 28, 2001", genres: ['vehicle combat'] },
-    { id: 87, title: "Bloody Roar Extreme", Developers: "Konami Software Shanghai", Publishers: "Hudson Soft", Pal: "Jul 17, 2003", JP: "Nov 28, 2003", NA: "May 27, 2003", genres: ['fighting'] },
+    { id: 87, title: "Bloody Roar Extreme", Developers: "Konami Software Shanghai", Publishers: "Hudson Soft", Pal: "Jul 17, 2003", JP: "Nov 28, 2003",NA: "May 27, 2003", genres: ['fighting'] },
     { id: 88, title: "BlowOut", Developers: "Terminal Reality", Publishers: "Majesco Sales", Pal: "Nov 26, 2004", JP: "Unreleased", NA: "Nov 5, 2003", genres: ['run and gun'] },
     { id: 89, title: "BMX XXX", Developers: "Z-Axis", Publishers: "AKA Acclaim", Pal: "Dec 6, 2002", JP: "Unreleased", NA: "Nov 15, 2002", genres: ['sports (freestyle bmx)'] },
     { id: 90, title: "Braveknight", Developers: "Panther Software", Publishers: "Panther Software", Pal: "Unreleased", JP: "Sep 26, 2002", NA: "Unreleased", genres: ['simulation'] },

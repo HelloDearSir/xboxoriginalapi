@@ -321,11 +321,9 @@ let games = [
     { id: 318, title: "Goblin Commander: Unleash the Horde", Developers: "Jaleco Entertainment", Publishers: "Jaleco Entertainment", Pal: "Mar 19, 2004", JP: "Unreleased", NA: "Nov 11, 2003", genre: ['Action', 'real-time strategy'] },
     { id: 319, title: "The Godfather", Developers: "Page 44 Studios", Publishers: "Electronic Arts", Pal: "Mar 23, 2006AUS Mar 24, 2006EU", JP: "Unreleased", NA: "Mar 21, 2006", genre: ['Action-adventure'] },
 ];
-
 app.get('/games', (req, res) => {
     res.send(games);
 });
-
 //Using the /id so if it will just use 2 or 3 ect 
 app.get('/games/:id', (req, res) => {
     const parsedganesId = parseInt(req.params.id);
@@ -338,7 +336,6 @@ app.get('/games/:id', (req, res) => {
     }
     res.send(findGamesID);
 })
-
 // app.get the url / games/genre/:genreName to using the genre for the game using arrays 
 app.get('/games/genre/:genreName', (req, res) => {
     const genreName = req.params.genreName.toLowerCase();

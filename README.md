@@ -4,3 +4,4 @@ web crawler to get the data and store
 need useful information sites
 first link
 https://www.mobygames.com/platform/xbox/title:A/
+https://www.ogxbox.co.uk/game-list/view-game-list

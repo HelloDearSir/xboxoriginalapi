@@ -6,3 +6,4 @@ first link
 https://www.mobygames.com/platform/xbox/title:A/
 https://www.ogxbox.co.uk/game-list/view-game-list
 With ai around might have to use a different way to get the data
+https://www.ogxbox.co.uk/game-list

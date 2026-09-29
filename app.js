@@ -9,18 +9,19 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/html/index.html'))
 })
 
-
+// content Security policy
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
     "default-src 'self'; connect-src 'self'  https://xboxoriginalapi-production.up.railway.app"
   );
-  next();
+  next()
 });
+
 const port = 5000;
 
 app.use(xboxgames);
+// for local use 
 app.listen(port,() => {
     console.log(`Server is running on port ${port}`);
 })
- 
